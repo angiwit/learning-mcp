@@ -19,7 +19,7 @@ import java.util.List;
 import java.util.Random;
 
 @Log4j2
-public class Main {
+public class MCPEmbedTomcat {
     public static void main(String[] args1) throws InterruptedException, LifecycleException {
         McpServerTransportProvider transportProvider = new HttpServletSseServerTransportProvider(new ObjectMapper(), "/sse/message");
         // Create an async server with custom configuration
